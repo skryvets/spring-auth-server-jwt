@@ -1,0 +1,9 @@
+server:
+  port: 6061
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+#          issuer-uri:
+          jwk-set-uri: "http://localhost:6060/.well-known/jwks.json"

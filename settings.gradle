@@ -1,0 +1,4 @@
+rootProject.name = 'spring-auth-server-jwt'
+include("auth-server")
+include("resource-server")
+
