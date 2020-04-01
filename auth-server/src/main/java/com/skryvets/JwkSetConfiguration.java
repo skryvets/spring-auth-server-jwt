@@ -37,10 +37,9 @@ public class JwkSetConfiguration extends AuthorizationServerConfigurerAdapter {
     @Override
     public void configure(AuthorizationServerSecurityConfigurer security) {
         security
-        .tokenKeyAccess("permitAll()")
-        .checkTokenAccess("isAuthenticated()")
-        .passwordEncoder(passwordEncoder) //Fix for manual
-        .allowFormAuthenticationForClients() //Adds form capability
+          .tokenKeyAccess("permitAll()")
+          .checkTokenAccess("isAuthenticated()")
+          .allowFormAuthenticationForClients() //Adds form capability
         ;
     }
 
